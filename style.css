@@ -1,0 +1,169 @@
+@font-face{
+    font-family: 'NorseBold';
+    src:url(../sign-up-form/Norse-Bold.otf)
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family:"NorseBold", sans-serif;
+    background-color: rgb(246, 246, 239);
+    
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    min-width: 600px;
+}
+
+.left, .right{
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    width: 40%;
+    left:0;
+    background-image: url(../sign-up-form/foto_tenis.jpg);
+    background-position: center center;
+    background-size: cover;  
+    background-color: black;
+}
+
+.right{
+    width: 60%;
+    right:0;
+    margin: 0; 
+    padding: 0;
+}
+
+.container-logo{
+    background-color: rgba(31, 30, 30, 0.276);
+    width:100%;
+    height: 25%;
+    margin-top:80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-name{
+    padding: 5px;
+    font-size: 6vw;
+    min-width: 40%;
+}
+
+#logo-img > img{
+    max-width: 80px;
+    max-height: 80px;
+    padding: 5px;
+}
+
+.container-footer{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    padding: 5px;
+    font-size: 9px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.info, .form, .account{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info{
+    flex: 1;
+}
+
+.form{
+    flex: 2;
+}
+
+.account{
+    flex: 1;
+}
+
+.info > p {
+    font-size: 1em;
+    padding: 15px;
+    text-align:justify;
+    line-height: 1.2;
+}
+
+.account > p{
+    font-size: 0.8em;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container, .send{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+legend{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.left-form, .right-form{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+}
+
+.right-form{
+    margin-right: 1px;
+}
+
+.left-form > p, .right-form > p{
+    margin:10px;
+}
+
+button{
+    background-color: rgb(78, 99, 34);
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;
+    width: 150px; 
+    margin-left: 15px;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+input:focus{
+    box-shadow: 2px 2px 3px black;
+}
+
+.help{
+    display:none;
+    font-size: 0.5em;
+    color: brown;
+    margin: 0px;
+    padding: 0px;
+}
+
+.invalid{
+    border: 1px solid red;
+}
+

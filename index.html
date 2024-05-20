@@ -8,6 +8,72 @@
     <title>Form</title>
 </head>
 <body>
+    <div class="container">
+        <div class="left">
+            <div class="container-logo">
+                <div id="logo-name">
+                    PointPro
+                </div>
+                <div id="logo-img">
+                    <img src="../sign-up-form/tennis.png" alt="logo-tennis">
+                </div>
+            </div>
+            <div class="container-footer">
+                Photo by Ahmed on Unsplash
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="info">
+                <p>Welcome to our tennis game scheduling app! You you can reserve courts, create or join games, and connect with other tennis enthusiasts in your area. Join the tennis community and start playing now! </p>
+            </div>
+
+            <div class="form">
+                <fieldset>
+                    <legend>Let`s do this!</legend>
+                    <form action="#" method="get">
+
+                    <div class="form-container">
+                      
+                        <div class="left-form">
+                            <p><label for="ifirstname">First Name:</label></p>
+                            <p><input type="text" name="firstname" id="ifirstname" ></p>
+                           
+                            <p><label for="iemail">Email:</label></p>
+                            <p><input type="email" name="email" id="iemail" ></p>
+                           
+                            <p><label for="ipass">Password:</label></p>
+                            <p><input type="password" name="pass" id="ipass" ></p>
+                            <p class="help">* Passwords do not match</p>
+                        </div>
+
+                        <div class="right-form">
+                            <p><label for="ilastname">Last Name:</label></p>
+                            <p><input type="text" name="lastname" id="ilastname" ></p>
+                            
+                            <p> <label for="inumber">Phone Number:</label> </p>
+                            <p> <input type="text" name="number" id="inumber" maxlength="9" minlength="9" >
+                       
+                            <p><label for="ipass2">Confirm Password:</label></p>
+                            <p><input type="password" name="pass2" id="ipass2" ></p>
+                        </div>
+
+                    </div>
+
+                    <div class="send">
+                        <button type="submit">Create Account</button>
+                    </div>
+
+                    </form>
+                </fieldset>
+            </div>
     
+            <div class="account">
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
 </body>
 </html>
